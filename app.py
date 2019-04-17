@@ -43,7 +43,7 @@ def handle_message(event):
         event.reply_token,
 
         text = event.message.text
-        if text in ['おは'];
+        if text in ['おは']:
         TextSendMessage(text="おっは～")
 
 
