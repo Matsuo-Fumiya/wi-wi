@@ -39,15 +39,12 @@ def callback():
 
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
+    text = event.message.text
+    if text in ['おは']:
     line_bot_api.reply_message(
-        event.reply_token,
+    event.reply_token,
 
-        text = event.message.text
-        if text in ['おは']:
-        TextSendMessage(text="おっは～")
-
-
-        TextSendMessage(text='event.message.text'))
+    TextSendMessage(text="おはようございます！"))
 
 if __name__ == "__main__":
 #    app.run()
