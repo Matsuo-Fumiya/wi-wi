@@ -14,11 +14,10 @@ import os
 app = Flask(__name__)
 
 #環境変数取得
-YOUR_CHANNEL_ACCESS_TOKEN = os.environ["LINE_BOT_CHANNEL_TOKEN"]
-YOUR_CHANNEL_SECRET = os.environ["LINE_BOT_CHANNEL_SECRET"]
 
-line_bot_api = LineBotApi(YOUR_CHANNEL_ACCESS_TOKEN)
-handler = WebhookHandler(YOUR_CHANNEL_SECRET)
+
+line_bot_api = LineBotApi('Hh5cxnBD6LVhK2cHCyAUENwspppg+/jyzmb0N2CSbIMmd+nRhN6CsLS9Sk0gfF+VWw1kouEJGSFOylEE8Ped0e8ysn6g2zCCV2t5qamkgyaHtaZz3KKn/ye14UOaNjSpzK7SXzcZ9Nvg2uBCGBeNswdB04t89/1O/w1cDnyilFU=')
+handler = WebhookHandler('262e82b8892c846dadf6c1fc80d00b39')
 
 @app.route("/callback", methods=['POST'])
 def callback():
