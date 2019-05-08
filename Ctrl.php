@@ -1,6 +1,6 @@
 <?php
 /*アクセストークンを「''」内に記述する*/
-$aceessToken = '';
+$aceessToken = 'Hh5cxnBD6LVhK2cHCyAUENwspppg+/jyzmb0N2CSbIMmd+nRhN6CsLS9Sk0gfF+VWw1kouEJGSFOylEE8Ped0e8ysn6g2zCCV2t5qamkgyaHtaZz3KKn/ye14UOaNjSpzK7SXzcZ9Nvg2uBCGBeNswdB04t89/1O/w1cDnyilFU=';
 
 /*php://input(送られてきたデータが格納されているPHP固有の倉庫)から取り込む*/
 $jsonString = file_get_contents('php://input');
